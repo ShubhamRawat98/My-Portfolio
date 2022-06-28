@@ -1,0 +1,121 @@
+.logo-container{
+    transition: all 1s linear;
+    z-index: 0;
+    width: 400px;
+    height: 609px;
+    position: absolute;
+    top:0;
+    right: 18%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    transform: rotatez(30deg);
+    animation:fadeIn 3s .5s ease-in;
+    animation-iteration-count: 1;
+    
+    .solid-logo{
+        transition: all 1s linear;
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        animation:pulse 5s 1s ease-in-out;
+        animation-iteration-count: infinite;
+
+        
+    }
+
+}
+
+@media screen and (max-width:1400px){
+
+    .logo-container{
+        right: 12%;
+        transition: all 1s linear;
+        width: 400px;
+    height: 600px;
+    }
+    
+}
+@media screen and (max-width:1200px){
+
+    .logo-container{
+        right: 10%;
+        transition: all 1s linear;
+        width: 350px;
+        height: 500px;
+    }
+    .solid-logo{
+        transition: all 1s linear;
+
+    }
+}
+@media screen and (max-width:1100px){
+
+    .logo-container{
+        right: 8%;
+        transition: all 1s linear;
+        width: 300px;
+    height: 450px;
+    }
+    
+}
+@media screen and (max-width:1000px){
+
+    .logo-container{
+        right: 8%;
+        transition: all 1s linear;
+        width: 280px;
+        height: 450px;
+    }
+    
+}
+@media screen and (max-width:930px){
+    
+    .logo-container{
+        position: fixed;
+        width: 350px;
+        height: 500px;
+        transition: all 1s linear;
+        z-index: -999;
+        opacity: .15;
+        animation: pause;
+        
+    }
+    
+}
+@media screen and (max-width:600px){
+    
+    .logo-container{
+        transition: all 1s linear;
+        width: 300px;
+        height: 450px;
+        
+        
+    }
+    
+}
+@media screen and (max-width:400px){
+    
+    .logo-container{
+        position: relative;
+        transition: all 1s linear;
+        width: 200px;
+        height: 350px;
+        .solid-logo{
+            top:30%;
+            left:30%;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+     
+    }
+    
+}

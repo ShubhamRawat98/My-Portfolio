@@ -1,0 +1,190 @@
+.home-page{
+
+    .text-zone{
+        transition: all 1s linear;
+        position: absolute;
+        left: 170px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60%;
+        max-height: 90%;
+
+    }
+
+    h1{
+        transition: all 1s linear;
+        color: rgb(90, 86, 86);
+        font-size: 70px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight:400;
+        &:before{
+            content:'<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 20px;
+            position: absolute;
+            margin-top: -20px;
+            opacity: 0.6;
+        }
+        &:after{
+            content:'<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 23px;
+            position: absolute;
+            margin-top: 36px;
+            margin-left: 20px;
+            animation: fadeIn 2s 2s backwards;
+            opacity: 0.6;
+        }
+
+        img{
+            width: 32px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 3s .1s linear both;
+        }
+    }
+
+    h2{
+        color: rgb(135, 131, 131);
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 1px;
+        
+    }
+    .flat-button{
+        // margin-top: 18px;
+        padding:5px 8px;
+        // font-family: sans-serif;
+        text-decoration: none;
+        font-size: 20px;
+        border: 1px solid gray;
+        background-color: rgb(203, 195, 195);
+        border-radius: 3px;
+        color: rgb(26, 25, 25);
+        font-family: 'Helvetica Neue';
+    
+        animation-duration: 1s;
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+        &:hover{
+                animation: tada 1s;
+                // margin-top: 18px;
+                animation: pause;
+                border: 1px solid gray;
+                border-radius: 3px;
+                // font-weight: 900;
+            }
+            
+         }
+         @keyframes blink {
+            from {
+            //    opacity: 1;
+            background-color: grey;
+        }
+        to {
+                background-color: rgb(37, 34, 34);
+            //    opacity: 0;
+            color: grey;
+            }
+
+    }
+    
+
+}
+@media screen and(max-width:1000px) {
+    .home-page{
+
+        .text-zone{
+            transition: all 1s linear;
+        left: 120px;
+    }
+    h1{
+        transition: all 1s linear;
+        font-size: 90px;
+
+    }
+}
+    
+}
+@media screen and(max-width:930px) {
+    .home-page{
+
+        .text-zone{
+            transition: all 1s linear;
+            left: 130px;
+            width: 70%;
+        }
+        h1{
+        transition: all 1s linear;
+        font-size: 85px;
+
+    }
+
+    
+}
+    
+}
+@media screen and(max-width:600px) {
+    .home-page{
+
+        .text-zone{
+            left: 110px;
+            transition: all 1s linear;
+        }
+        h1{
+        transition: all 1s linear;
+        font-size: 60px;
+        
+    }
+    
+}
+
+}
+@media screen and(max-width:450px) {
+    .home-page{
+        
+        .text-zone{
+            transition: all 1s linear;
+            left: 100px;
+        }
+        h1{
+        transition: all 1s linear;
+        font-size: 55px;
+
+    }
+    
+}
+    
+}
+@media screen and(max-width:400px) {
+    .home-page{
+        
+        .text-zone{
+            transition: all 1s linear;
+            left:90px;
+        }
+        h1{
+        transition: all 1s linear;
+        font-size: 50px;
+     }
+    
+}
+    
+}
+@media screen and(max-width:350px) {
+    .home-page{
+        
+     
+        h1{
+        transition: all 1s linear;
+        font-size: 40px;
+
+    }
+    
+}
+    
+}

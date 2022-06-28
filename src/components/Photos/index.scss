@@ -1,0 +1,391 @@
+.travel-page {
+    .text-zone {
+        transition: all 1s linear;
+        position: absolute;
+        left: 170px;
+        top: 300px;
+        transform: translateY(-50%);
+        width: 40%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 600px;
+
+        h1 {
+            transition: all 1s linear;
+            color: rgb(90, 86, 86);
+            font-size: 100px;
+            margin: 0;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            // animation: bounceIn 3s .1s forwards;
+
+
+            &:before {
+                content: '<h1>';
+                color: rgb(157, 152, 152);
+                font-family: 'La Belle Aurore';
+                font-size: 20px;
+                position: absolute;
+                margin-top: -10px;
+                opacity: 0.6;
+            }
+
+            &:after {
+                content: '<h1>';
+                color: rgb(157, 152, 152);
+                font-family: 'La Belle Aurore';
+                font-size: 23px;
+                position: absolute;
+                margin-top: 70px;
+                margin-left: 22px;
+                animation: fadeIn 2s 2s backwards;
+                opacity: 0.6;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(213, 205, 205);
+            font-family: sans-serif;
+            min-width: fit-content;
+            animation: pulse 1.5s;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.8s;
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: 1.7s;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: 1.9s;
+            }
+        }
+    }
+
+    .text-animate-hover {
+        min-width: 10px;
+        display: inline-block;
+        animation-fill-mode: both;
+
+        &:hover {
+            animation: rubberBand 1s;
+            color: rgb(34, 29, 29);
+        }
+    }
+
+
+}
+
+
+.pic-zone {
+    transition: all 1s linear;
+    border-radius: 20px;
+    width: 40%;
+    max-height: 500px;
+    position: absolute;
+    right: 5%;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: jackInTheBox 2s 2s ease-in-out both;
+
+    .slider {
+        margin: 10px;
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    .slide {
+        box-shadow: 1px 1px 10px rgb(206, 203, 203);
+        margin: 10px;
+        width: 50%;
+        height: 100%;
+        border-radius: 5px;
+
+    }
+
+    #slide1 {
+        background: url(../../assets/images/t1.jpeg);
+        background-size: contain;
+        background-size: cover;
+        animation: slide1 18s infinite;
+        transition-timing-function: ease-in-out;
+
+        @keyframes slide1 {
+            20% {
+                background: url(../../assets/images/t2.jpeg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            40% {
+                background: url(../../assets/images/t3.jpeg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            60% {
+                background: url(../../assets/images/t4.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            80% {
+                background: url(../../assets/images/t5.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            100% {
+                background: url(../../assets/images/t1.jpeg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+        }
+
+    }
+
+    #slide2 {
+        background: url(../../assets/images/t6.jpg);
+        background-size: contain;
+        background-size: cover;
+        animation: slide2 20s 2s infinite;
+        transition-timing-function: ease-in-out;
+
+        @keyframes slide2 {
+            20% {
+                background: url(../../assets/images/t7.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            40% {
+                background: url(../../assets/images/t8.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            60% {
+                background: url(../../assets/images/t9.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            80% {
+                background: url(../../assets/images/t10.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            100% {
+                background: url(../../assets/images/t6.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+        }
+    }
+
+    #slide3 {
+        background: url(../../assets/images/t11.jpeg);
+        background-size: contain;
+        background-size: cover;
+        animation: slide3 15s infinite;
+        transition-timing-function: ease-in-out;
+
+        @keyframes slide3 {
+            20% {
+                background: url(../../assets/images/t12.jpeg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            40% {
+                backSground: url(../../assets/images/t13.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            60% {
+                background: url(../../assets/images/t14.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            80% {
+                background: url(../../assets/images/t15.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            100% {
+                background: url(../../assets/images/t11.jpeg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+        }
+    }
+
+    #slide4 {
+        background: url(../../assets/images/t16.jpg);
+        background-size: contain;
+        background-size: cover;
+        animation: slide4 20s infinite;
+        transition-timing-function: ease-in-out;
+
+        @keyframes slide4 {
+            20% {
+                background: url(../../assets/images/t17.webp);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            40% {
+                background: url(../../assets/images/t18.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            60% {
+                background: url(../../assets/images/t19.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            80% {
+                background: url(../../assets/images/t20.webp);
+                background-size: contain;
+                background-size: cover;
+
+            }
+
+            100% {
+                background: url(../../assets/images/t16.jpg);
+                background-size: contain;
+                background-size: cover;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .travel-page {
+        .text-zone {
+            transition: all 1s linear;
+            width: 35%;
+            top: 320px;
+
+            h1 {
+                transition: all 1s linear;
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+.pic-zone {
+
+    transition: all 1s linear;
+    width: 40%;
+    height: 550px;
+
+
+}
+
+@media screen and (max-width:1000px) {
+    .travel-page {
+        .text-zone {
+            transition: all 1s linear;
+            width: 40%;
+            top: 330px;
+            left: 100px;
+
+            h1 {
+                transition: all 1s linear;
+                font-size: 80px;
+            }
+
+        }
+    }
+
+    .pic-zone {
+
+        transition: all 1s linear;
+        width: 40%;
+        height: 55%;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .travel-page {
+        .text-zone {
+            transition: all 1s linear;
+            width: 70%;
+            top: 320px;
+            left: 100px;
+
+            h1 {
+                transition: all 1s linear;
+                font-size: 70px;
+            }
+
+        }
+    }
+
+    .pic-zone {
+        right: 15%;
+        transition: all 1s linear;
+        width: 70%;
+        height: 70%;
+
+        .slider {
+            opacity: .1;
+
+
+        }
+    }
+
+}
+@media screen and (max-width:600px) {
+    .travel-page {
+        .text-zone {
+            transition: all 1s linear;
+            width: 80%;
+            top: 315px;
+            left: 60px;
+
+            h1 {
+                transition: all 1s linear;
+                font-size: 40px;
+            }
+
+        }
+    }
+
+}

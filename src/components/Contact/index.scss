@@ -1,0 +1,235 @@
+.contact-form{
+    width: 100%;
+    margin-top: 20px;
+    ul{
+        padding: 0;
+        margin: 0;
+
+        li{
+            border-radius: 3px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            opacity: 0;
+            animation: fadeIn 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+        li.half{
+             width: 49%;
+             margin-left: 2%;
+             float: left;
+             clear: none;
+            
+            &:first-child{
+                margin-left: 0;
+    
+            }
+        }
+    }
+    
+    input[type='text'],
+    input[type='email']{
+            // display: block;
+            width: 100%;
+            border: 0;
+            background-color: rgb(179, 187, 187);
+            height: 40px;
+            font-size: 16px;
+            color: rgb(95, 99, 91);
+            padding: 0 15px;
+            box-sizing: border-box;
+
+    }
+
+   textarea{
+        width: 100%;
+        border: 0;
+        background-color: rgb(195, 204, 204);
+        height: 145px;
+        font-size: 16px;
+        color: rgb(105, 98, 98);
+        padding: 20px;
+        min-height: 145px;
+        box-sizing: border-box;
+    }
+    .flat-btn{
+        float: right;
+        // margin-top: 18px;
+        padding:2px 8px;
+        // font-family: sans-serif;
+        text-decoration: none;
+        font-size: 20px;
+        border: 1px solid gray;
+        background-color: rgb(195, 204, 204);
+        border-radius: 3px;
+        color: rgb(26, 25, 25);
+        font-family: 'Helvetica Neue';
+    
+        animation-duration: 1.5s;
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+        &:hover{
+
+                animation: pause;
+                border: 1px solid gray;
+                border-radius: 3px;
+            }
+            
+         }
+         @keyframes blink {
+            from {
+            background-color: grey;
+        }
+        to {
+                background-color: rgb(37, 34, 34);
+            color: grey;
+            }
+
+    }
+} 
+
+.info-map{
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(29, 27, 27);
+    top: 75px;
+    right: 7%;
+    z-index: 999;
+    width: 267px;
+    padding: 20px;
+    color: rgb(197, 191, 191);
+    font-family:"Helvetica" ;
+    font-size: 17px;
+    font-weight: 300;
+    animation: smooth 5s .5s infinite;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+    .info{
+        transition: all 1s linear;
+        animation: bounceInDown 2s 1.2s;
+        animation-fill-mode: backwards;
+        transition: all 5s linear;
+        span{
+            animation: headShake 4s 3s infinite;
+            animation-timing-function: ease-in-out;
+            display: block;
+            padding-top: 20px;
+            a{
+                font-size: 16px;
+                color: rgb(231, 224, 224);
+                text-decoration: none;
+            }
+
+        }
+    }
+}
+@keyframes smooth {
+    0%{
+        opacity: 1;
+        
+    }
+    50%{
+        opacity: .6;
+
+    }
+}
+.map-wrap{
+    transition: all 1s linear;
+    position: relative;
+    top: 70px;
+    float: right;
+    width: 43%;
+    height: 500px;
+    
+}
+.leaflet-container{
+    transition: all 1s linear;
+    border-radius: 10px;
+    right: 15%;
+    width: 100%;
+    height: 100%;
+    position: relative;   
+    // opacity: 0;
+    animation: bounceInDown 2s .8s;
+    animation-fill-mode: forwards;
+
+}
+@media screen and (max-width:1200px) {
+    .leaflet-container{
+        transition: all 1s linear;
+        right: 10%;
+    }
+    .info-map{
+        
+        transition: all 1s linear;
+        right: 5%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .leaflet-container{
+        transition: all 1s linear;
+        right: 10%;
+    }
+    .info-map{
+        
+        transition: all 1s linear;
+        right: 5%;
+    }
+}
+@media screen and (max-width:850px) {
+    .map-wrap{
+        height: 300px;
+        width: 40%;
+        top: 250px;
+    }
+    .info-map{
+        
+        transition: all 1s linear;
+        right:4%;
+        width: 35%;
+    }
+}
+@media screen and (max-width:600px) {
+    .map-wrap{
+        z-index: -999;
+        opacity: .3;
+        height: 800px;
+        width: 100%;
+        top: 25px;
+        .leaflet-container{
+            border-radius: 0;
+            right: 0;
+        }
+    }
+    .info-map{
+        padding: 10px;
+        border-radius: 5px;
+        z-index: -5;
+        transition: all 1s linear;
+        top: 30px;
+        right:1%;
+        width: 33%;
+        font-size: 12px;
+        .info{
+            span{
+                padding-top: 10px;
+                transition: all 1s linear;
+                a{
+                    transition: all 1s linear;
+                    width: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+    
+
+
